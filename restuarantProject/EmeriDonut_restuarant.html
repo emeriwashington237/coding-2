@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeri Donut Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #23f8ff;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Landing Section */
+        #home {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        #home h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #home h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .donut-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            /* Space between the donut images */
+        }
+
+        .donut-item {
+            text-align: center;
+        }
+
+        #home img {
+            height: 150px;
+            width: 150px;
+            /* Ensures all donut images are the same size as the strawberry image */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .donut-name {
+            font-size: 18px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order Online</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Landing Image Section -->
+    <section id="home">
+        <h1>Emeri Donut Shop</h1>
+        <h2>Our Donuts</h2>
+
+        <!-- Horizontal donut layout -->
+        <div class="donut-container">
+            <div class="donut-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84JjQx__YEJCpvwjpIIqAqMqdWnf5MoKynw&s"
+                    alt="Delicious Chocolate Donut">
+                <p class="donut-name">Chocolate</p>
+            </div>
+            <div class="donut-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaY2SiR6gyxyZC4JEmxUrlYlbmYA9FV52VLw&s"
+                    alt="Delicious Strawberry Donut">
+                <p class="donut-name">Strawberry</p>
+            </div>
+            <div class="donut-item">
+                <img src=""
+                    alt="Delicious Glazed Donut">
+                <p class="donut-name">Glazed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Emeri Donut Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
