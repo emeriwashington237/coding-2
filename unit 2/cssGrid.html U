@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>HTML Tutorial</title>
+ <style>
+ .primaryRules{
+background-color: whitesmoke;
+margin:8px;
+height:10px;
+ }
+secondaryrules {
+
+}
+ </style>
+</head>
+
+<body class="primaryRules">1</body>
+ <div class="primaryRules">2</div>
+ <div class="primaryRules>3</div>
+ <div>4</div>
+ <div>5</div>
+ <div>6</div>
+</body>
+</html>
