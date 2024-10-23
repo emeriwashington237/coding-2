@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* Full height */
+            background-color: #141414;
+            /* Fallback for browsers that don't support background images */
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS854NEH5XBv4_26cYx5h6G8MXxH2dS4X8jiA&s');
+            /* Add your image here */
+            background-size: cover;
+            /* Cover the entire page */
+            background-position: center;
+            /* Center the background image */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #FF6F00;
+            /* Bright orange */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Black with transparency */
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 111, 0, 0.7);
+            /* Orange glow */
+            width: 500px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #FF6F00;
+            /* Bright orange labels */
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #FF6F00;
+            /* Orange border */
+            background-color: #2e2e2e;
+            /* Dark input background */
+            color: white;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #FF6F00;
+            /* Bright orange submit button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e55d00;
+            /* Darker orange on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+       
+        SwiftShip Logistics 
+        <h1>Shipping Form</h1>
+    </header>
+
+    <div class="container">
+        <form action="submit_form.php" method="post">
+            <label for="itemDescription">Item Description:</label>
+            <input type="text" id="itemDescription" name="itemDescription" required>
+
+            <label for="weight">Weight or Dimensions:</label>
+            <input type="text" id="weight" name="weight" required>
+
+            <label for="destination">Destination Address:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="shippingMethod">Preferred Shipping Method:</label>
+            <select id="shippingMethod" name="shippingMethod" required>
+                <option value="standard">Standard</option>
+                <option value="express">Express</option>
+                <option value="overnight">Overnight</option>
+            </select>
+
+            <label for="senderContact">Sender Contact Info:</label>
+            <input type="text" id="senderContact" name="senderContact" required>
+
+            <label for="recipientContact">Recipient Contact Info:</label>
+            <input type="text" id="recipientContact" name="recipientContact" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
