@@ -1,0 +1,14 @@
+// two foward slashes = this is a comment
+
+// strings
+// strings are pieces of data that are wrapped around
+//quotation marks
+"some text..."
+"239489984"
+"@iankimble 1239@39#$%"
+'a strings with single quotes...'
+
+// Integer
+// an integer is a piece of data that repersents 
+// a whole number
+679869
