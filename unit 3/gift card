@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeri Burger Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Emeri Burger Shop</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Emeri Burger Shop</h2>
+        <p>Your one-stop shop for delicious, freshly made burgers!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="burger-item">
+            <h3>Classic Burger</h3>
+            <p>Beef patty with lettuce, tomato, and cheese.</p>
+        </div>
+        <div class="burger-item">
+            <h3>Cheeseburger</h3>
+            <p>Double cheese with beef patty, pickles, and onions.</p>
+        </div>
+        <div class="burger-item">
+            <h3>Veggie Burger</h3>
+            <p>A healthy choice with grilled veggies and a plant-based patty.</p>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order">
+        <h2>Order Your Burger</h2>
+        <form id="order-form" action="https://formspree.io/f/{YOUR_FORMSPREE_CODE}" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" request
