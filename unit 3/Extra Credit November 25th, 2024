@@ -1,0 +1,46 @@
+# 1. What is a function? Why do we use functions in programming?
+# A function is a block of reusable code designed to perform a specific task.
+# We use functions to make programs modular, improve code reusability, simplify debugging, 
+# and make code easier to read and maintain.
+
+# 2. Function to calculate a number by 12 and subtract 5
+def calculate_number(number):
+    result = (number * 12) - 5
+    print(f"Result of calculating {number}: {result}")
+
+# 3. Function to welcome someone to a coding class
+def welcome_message(name):
+    message = f"Hello {name}! Welcome to coding!"
+    print(message)
+
+# 4. Function to compare a number to 17
+def compare_to_17(number):
+    if number > 17:
+        print(f"{number} is greater than 17: True")
+    else:
+        print(f"{number} is greater than 17: False")
+
+# 5. Function to show instructions for making a cheesesteak sandwich
+def cheesesteak_instructions():
+    print("How to make a cheesesteak sandwich:")
+    print("1. Cook thinly sliced beef in a skillet.")
+    print("2. Melt provolone or American cheese on the beef.")
+    print("3. Toast a hoagie roll and place the beef and cheese inside.")
+    print("4. Optionally add sautéed onions, peppers, or mushrooms.")
+    print("5. Serve warm and enjoy!")
+
+# 6. Difference between function call and function definition:
+# - Function Definition: This is where the function is created.
+# Example:
+# def example_function():
+#     print("This is a function definition.")
+
+# - Function Call: This is when the function is executed.
+# Example:
+# example_function()  # This is a function call.
+
+# Example usage of all functions
+calculate_number(7)               # Adjust number for testing
+welcome_message("Alex")           # Adjust name for testing
+compare_to_17(20)                 # Adjust number for testing
+cheesesteak_instructions()        # Call to display instructions
