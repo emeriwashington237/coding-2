@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grade Converter</h1>
+    <p>Enter your grade score:</p>
+    <input type="number" id="score" placeholder="Enter grade score">
+    <button onclick="convertGrade()">Submit</button>
+    <p id="result"></p>
+
+    <script>
+        function convertGrade() {
+            var score = document.getElementById("score").value; // Get the value entered by the user
+            var result = document.getElementById("result");
+
+            // Validate if the score is a valid number
+            if (score === "" || isNaN(score)) {
+                result.textContent = "Please enter a valid numerical grade.";
+                return;
+            }
+
+            // Convert score to a letter grade
+            if (score >= 90 && score <= 100) {
+                result.textContent = "You have an A!";
+            } else if (score >= 80 && score < 90) {
+                result.textContent = "You have a B!";
+            } else if (score >= 70 && score < 80) {
+                result.textContent = "You have a C!";
+            } else if (score >= 60 && score < 70) {
+                result.textContent = "You have a D!";
+            } else if (score >= 0 && score < 60) {
+                result.textContent = "You have an F!";
+            } else {
+                result.textContent = "Please enter a grade between 0 and 100.";
+            }
+        }
+    </script>
+</body>
+
+</html>
