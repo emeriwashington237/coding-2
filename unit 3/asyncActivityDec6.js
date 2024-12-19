@@ -18,7 +18,7 @@ function stateLandmark(state) {
         return "A landmark in Texas is the Alamo.";
     } else {
         return "The state could not be found.";
-    }
+    } // Closing the function properly
 }
 
 // Testing the functions
