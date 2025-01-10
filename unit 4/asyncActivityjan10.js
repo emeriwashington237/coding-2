@@ -1,41 +1,27 @@
-// Async Activity January 10, 2025
+// Task 1: Create three different lists of grocery items
 
-// 1. Create 3 different lists with grocery store items.
+// List of items in the frozen food aisle
+const frozenFood = ["Frozen Pizza", "Ice Cream", "Frozen Vegetables", "Chicken Nuggets", "Frozen Fries"];
 
-// List for frozen food aisle
-let frozenFoods = ["Frozen Pizza", "Ice Cream", "Frozen Vegetables", "Frozen Fish", "Frozen Chicken"];
+// List of items in the international food aisle
+const internationalFood = ["Soy Sauce", "Rice Noodles", "Curry Paste", "Sushi Kit", "Taco Shells"];
 
-// List for international food aisle
-let internationalFoods = ["Sushi Rolls", "Tacos", "Curry Paste", "Sriracha", "Pasta"];
+// List of items in the produce aisle
+const produceAisle = ["Apples", "Bananas", "Spinach", "Tomatoes", "Carrots"];
 
-// List for produce aisle
-let produce = ["Apples", "Bananas", "Carrots", "Lettuce", "Tomatoes"];
+// Task 2: Accessing elements at specific indices
+const numbers = [1, 30, 39, 50, 293, 100];
 
-// Print the lists
-console.log("Frozen Foods:", frozenFoods);
-console.log("International Foods:", internationalFoods);
-console.log("Produce Items:", produce);
+console.log("Item at index 0 of the numbers list:", numbers[0]); // Output: 1
+console.log("Item at index 3 of the numbers list:", numbers[3]); // Output: 50
+console.log("Item at index 4 of the numbers list:", numbers[4]); // Output: 293
 
-// 2. Use console.log to return the correct values from the 'numbers' array.
-
-let numbers = [1, 30, 39, 50, 293, 100];
-
-// Print the number at index 0
-console.log("Number at index 0:", numbers[0]);
-
-// Print the number at index 3
-console.log("Number at index 3:", numbers[3]);
-
-// Print the number at index 4
-console.log("Number at index 4:", numbers[4]);
-
-// 3. Create a function to multiply the number at index 4 in the array
-
-function multiplyIndex4() {
-    let numberAtIndex4 = numbers[4];
-    let result = numberAtIndex4 * 2; // Multiplying by 2 (you can adjust this as needed)
-    return result;
+// Task 3: Create a function that multiplies the number at index 4 of the list
+// Function to multiply the value at index 4 by a given factor
+function multiplyAtIndex4(list, factor) {
+    return list[4] * factor;
 }
 
-// Print the result of multiplying the number at index 4 by 2
-console.log("Number at index 4 multiplied by 2:", multiplyIndex4());
+// Example usage of the function:
+const result = multiplyAtIndex4(numbers, 2); // Multiplies the value at index 4 (293) by 2
+console.log("Multiplying value at index 4 by 2:", result); // Output: 586
